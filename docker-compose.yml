@@ -1,0 +1,14 @@
+services:
+  base:
+    image: node:18
+    working_dir: /excalidraw-room
+    volumes:
+      # Mount local version of `excalidraw-room` code
+      - type: bind
+        source: ./
+        target: /excalidraw-room
+    env_file:
+      - .env
+    tty: true
+    ports:
+      - 80:80
