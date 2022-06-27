@@ -3,13 +3,12 @@ import http from "http";
 import { Server } from "socket.io";
 
 const app = express();
-const port = process.env.PORT;
-
 app.get("/", (_: any, res: any) => {
-  res.send("200");
+  res.sendStatus("200");
 });
 
 const server = http.createServer(app);
+const port = process.env.PORT;
 
 server.listen(port, () => {
   console.log(`listening on port: ${port}`);

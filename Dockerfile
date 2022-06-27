@@ -5,9 +5,5 @@ WORKDIR /excalidraw-room
 COPY package.json yarn.lock ./
 RUN yarn
 
-COPY tsconfig.json ./
-COPY src ./src
+COPY . .
 RUN yarn build
-
-EXPOSE 80
-CMD ["yarn", "start"]
