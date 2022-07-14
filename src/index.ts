@@ -18,10 +18,9 @@ Sentry.init({
     // Set tracesSampleRate to 1.0 to capture 100%
     // of transactions for performance monitoring.
     // We recommend adjusting this value in production
-    tracesSampleRate: 1.0,
+    tracesSampleRate: 0,
 });
 app.use(Sentry.Handlers.requestHandler() as express.RequestHandler);
-app.use(Sentry.Handlers.tracingHandler() as express.RequestHandler);
 
 app.get("/", (_: any, res: any) => {
     res.sendStatus("200");
