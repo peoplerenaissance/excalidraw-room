@@ -24,7 +24,7 @@ app.use(Sentry.Handlers.requestHandler() as express.RequestHandler);
 
 app.get("/", (_: any, res: any) => {
     res.sendStatus("200");
-});
+}); 
 
 const server = http.createServer(app);
 const port = process.env.PORT;
@@ -117,3 +117,4 @@ io.on("connection", (socket) => {
 });
 
 app.use(Sentry.Handlers.errorHandler() as express.ErrorRequestHandler);
+
