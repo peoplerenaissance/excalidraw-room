@@ -10,7 +10,8 @@
         "typescript": "^4.7.4"
     },
     "resolutions": {
-        "ts-node-dev/resolve": "^1.22.8"
+        "ts-node-dev/resolve": "^1.22.8",
+        "rimraf/glob": "^10.3.10"
     },
     "license": "MIT",
     "main": "dist/index.js",
