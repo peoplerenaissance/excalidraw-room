@@ -11,7 +11,8 @@
     },
     "resolutions": {
         "ts-node-dev/resolve": "^1.22.8",
-        "rimraf/glob": "^10.3.10"
+        "rimraf/glob": "^10.3.10",
+        "ts-node-dev/**/glob": "^10.3.10"
     },
     "license": "MIT",
     "main": "dist/index.js",
