@@ -37,7 +37,7 @@ jobs:
           COMMIT: ${{ github.sha }}
         with:
           context: .
-          platforms: linux/amd64,linux/arm64
+          platforms: linux/amd64
           file: production/Dockerfile
           cache-from: type=registry,ref=${{ env.ECR_REGISTRY }}/${{ env.ECR_REPOSITORY }}:latest
           cache-to: type=inline
